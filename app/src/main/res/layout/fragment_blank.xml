@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BlankFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:text="@string/hello_blank_fragment" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Введите ваше имя:"
+        android:id="@+id/textView"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:translationX="118dp"
+        android:translationY="20dp" />
+
+    <Button
+        android:id="@+id/btnActTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="goNewView"
+        android:rotation="0"
+        android:text="В новый фрагмент"
+        android:translationY="100dp"
+        android:visibility="visible" />
+
+</FrameLayout>
